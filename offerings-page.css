@@ -57,6 +57,7 @@ h6 {
 
 a {
   display: inline-block;
+  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 a:hover,
@@ -78,6 +79,7 @@ a:focus {
 }
 
 .main-nav .dropdown-menu {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   min-width: 200px;
 }
@@ -111,8 +113,12 @@ a:focus {
   padding-left: 1.125rem;
 }
 .teal-heroSec .features .d-flex {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 2px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .teal-heroSec .feature-label {
@@ -137,8 +143,14 @@ a:focus {
 
 .links-wrapper,
 .teal-heroSec .overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .links-wrapper {
@@ -150,7 +162,11 @@ a:focus {
   list-style: none;
   padding: 0 1.5rem;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 .links-wrapper .section-links > li {
@@ -185,6 +201,7 @@ a:focus {
   display: inline-block;
   background: var(--green-light);
   border-radius: 50%;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -244,6 +261,7 @@ a:focus {
   height: 7.5rem;
   overflow: hidden;
   z-index: 2;
+  -webkit-transform: translateY(-99%);
   transform: translateY(-99%);
 }
 .arch-divider:after {
@@ -313,12 +331,20 @@ a:focus {
 .icon-wrapper .icon-circle,
 .strategy-sec .col-text .icon,
 .strategy-sec .image-with-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .strategy-sec .col-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 52%;
 }
@@ -329,6 +355,7 @@ a:focus {
   width: 5.875rem;
   background: var(--green-light);
   border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -338,6 +365,7 @@ a:focus {
 }
 .strategy-sec .col-text .icon img {
   max-width: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -353,10 +381,15 @@ a:focus {
 }
 .strategy-row-wrap .row {
   position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .strategy-sec .image-with-caption {
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .strategy-sec .image-with-caption .caption {
@@ -369,6 +402,7 @@ a:focus {
   font-size: 1.25rem;
   line-height: 1.35;
   background: var(--white-clr);
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.12);
 }
 .strategy-sec .image-with-caption .caption > span {
@@ -383,10 +417,12 @@ a:focus {
   width: 100%;
   max-width: 23.5rem;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .strategy-row-wrap .image-cluster > img {
   max-width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .strategy-row-wrap .row:after,
@@ -442,8 +478,14 @@ a:focus {
   width: 1px;
 }
 .strategy-row-wrap .cash-cycle-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin-right: 1rem;
   margin-left: auto;
@@ -457,6 +499,7 @@ a:focus {
 }
 .strategy-row-wrap .cash-cycle-wrap img.connect-line {
   max-width: 3rem;
+  -webkit-transform: translateY(-45%);
   transform: translateY(-45%);
 }
 
@@ -465,12 +508,17 @@ a:focus {
 }
 .strategy-row-wrap .cash-cycle-wrap .ccw-col > img {
   max-height: 6rem;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 /* targeted asssets */
 .targeted-assets-sec {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
   font-size: 1.25rem;
@@ -489,6 +537,8 @@ a:focus {
 }
 
 .targeted-assets-sec .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .icon-circle {
@@ -497,6 +547,7 @@ a:focus {
   margin: 0 auto 0.75rem;
   border-radius: 50%;
   background: var(--green-light);
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -527,14 +578,18 @@ a:focus {
   margin: 5.25rem -0.75rem 4rem;
   padding: 2.625rem 4rem;
   background: var(--white-clr);
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
 .top-ques-sec .accordion .btn-block {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   position: relative;
   background: none;
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0;
   padding: 1rem 1rem 1rem 2.25rem;
@@ -605,6 +660,8 @@ a:focus {
 }
 
 .investment-incentives-sec .tier-wrap .name {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .investment-incentives-sec .tier-wrap .name img {
@@ -691,6 +748,7 @@ a:focus {
   .links-wrapper,
   .teal-heroSec .overview,
   .teal-heroSec {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .overview .highlights {
@@ -710,6 +768,8 @@ a:focus {
   }
   .links-wrapper .section-links {
     padding: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .links-wrapper .invest-btn {
@@ -761,6 +821,7 @@ a:focus {
   }
   .wave-line-divider > img {
     height: 200%;
+    -webkit-transform: translateX(-4.5%);
     transform: translateX(-4.5%);
   }
   .targeted-assets-sec .row > .col-lg-6:first-of-type {
@@ -775,6 +836,7 @@ a:focus {
     width: 100% !important;
   }
   .strategy-sec .teal-wave-divider img {
+    -webkit-transform: translateX(-10%);
     transform: translateX(-10%);
     width: 225%;
   }
@@ -830,6 +892,7 @@ a:focus {
   .top-ques-sec .bg-shape,
   .teal-wave-divider img {
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .top-ques-sec .bg-shape {
@@ -865,6 +928,8 @@ a:focus {
     margin: 0 auto;
   }
   .investment-incentives-sec .tier-wrap > .d-flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .investment-incentives-sec .get-started-btn {
@@ -903,7 +968,10 @@ a:focus {
     min-width: 10rem;
   }
   .links-wrapper .section-links {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .links-wrapper .section-links > li {
@@ -914,6 +982,7 @@ a:focus {
     padding: 1rem 0 0;
   }
   .wave-line-divider > img {
+    -webkit-transform: translateX(-7.5%);
     transform: translateX(-7.5%);
   }
 }
@@ -943,6 +1012,7 @@ a:focus {
     font-size: 1.125rem;
   }
   .wave-line-divider > img {
+    -webkit-transform: translateX(-7.5%);
     transform: translateX(-7.5%);
   }
   .targeted-assets-sec {
@@ -989,6 +1059,7 @@ a:focus {
     height: auto;
   }
   .strategy-row-wrap .cash-cycle-wrap {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .strategy-row-wrap .cash-cycle-wrap .ccw-col {
@@ -1006,6 +1077,7 @@ a:focus {
   }
   .strategy-row-wrap .cash-cycle-wrap img.connect-line {
     max-width: 2.5rem;
+    -webkit-transform: translateY(-8%);
     transform: translateY(-8%);
   }
   .targeted-assets-sec .bg-image {
@@ -1014,6 +1086,8 @@ a:focus {
     width: auto;
   }
   .targeted-assets-sec .icon-wrapper {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: start;
   }
   .targeted-assets-sec .row > .col-lg-6:first-of-type {
@@ -1033,6 +1107,9 @@ a:focus {
   }
   .top-ques-sec .accordion .btn-block {
     padding: 0.75rem 0 0.75rem 2rem;
+  }
+  .top-ques-sec .accordion .btn-block:before {
+    top: 0.65rem;
   }
   .top-ques-sec .accordion-text-wrap {
     padding: 0.875rem 0 0.75rem 1.5rem;
@@ -1059,9 +1136,6 @@ a:focus {
   .investment-incentives-sec .tier-wrap ol {
     margin-left: 4.5rem;
   }
-}
-
-@media (min-width: 1200px) {
 }
 
 @media (min-width: 1600px) {
