@@ -1,590 +1,680 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offerings - PetroFunders</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Questrial&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="offerings-page.css">
-</head>
-<body class="offering-page">
-    <!-- ======== Header ======== -->
-    <!-- <header class="main-head container-fluid px-5 pt-4">
-        <nav class="navbar navbar-expand-md main-nav">
-            <a class="navbar-brand mr-5" href="#"><img src="images/logo.svg" alt="PetroFunders"></a>
-            <ul class="navbar-nav mt-2">
-                <li class="nav-item"><a class="nav-link p-3" href="#">My Dashboard</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link p-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Menu</a>
-                    <div class="dropdown-menu border-0 rounded-0 py-2 px-4">
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Profiles</a>
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Open Investments</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link p-3 active" href="#">Why Invest</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle p-3" href="#" id="navbardrop" data-toggle="dropdown">Resources</a>
-                    <div class="dropdown-menu border-0 rounded-0 py-2 px-4">
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Why Invest</a>
-                        <a class="dropdown-item px-0 bg-transparent" href="#">FAQ Center</a>
-                        <a class="dropdown-item px-0 bg-transparent" href="#">ESG</a>
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Blog</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav mt-2 ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link p-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Maurice D.</a>
-                    <div class="dropdown-menu border-0 rounded-0 py-2 px-4 dropdown-menu-right">
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Other Profile 1</a>
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Create New Profile</a>
-                        <a class="dropdown-item px-0 bg-transparent" href="#">Settings (account info)</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header> -->
-    <!-- ======== /Header ======== -->
 
-    <!-- ======== Main container ======== -->
-    <main>
-        <!-- ****** Teal hero-section ****** -->
-        <section class="teal-heroSec">
-           <div class="container">
-                <div class="col-lg-8 col-md-11 mx-auto text-center">
-                    <h1>Passive Income RIF</h1>
-                    <h3 class="sub-heading">Competitive returns, steady income stream</h3>
-                    <p>Each investment option is professionally managed by the ultra experienced PetroFunders management team, ensuring
-                        that
-                        each pFund vehicle is crafted to deliver returns</p>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Offerings - PetroFunders</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Questrial&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/offerings-page.css">
+    </head>
 
-                <div class="features mx-auto">
-                    <div class="d-flex">
-                        <div class="feature-label">Distributions</div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:94%" aria-valuenow="94" aria-valuemin="0"  aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="feature-label">Relative Risk</div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:12%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="feature-label">Full Cycle Return</div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
+    <body class="projects-show">
+        <!-- ======== Header ======== -->
+        <header class="main-head container-fluid px-lg-5">
+            <nav class="navbar navbar-expand-lg main-nav">
+                <a class="navbar-brand mr-5" href="#"><img src="images/logo.svg" alt="PetroFunders"></a>
+                <button class="navbar-toggler pr-0" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="29" viewBox="0 0 56 29" fill="none">
+                        <line x1="56" y1="1.5" y2="1.5" stroke="#0F304D" stroke-width="3" />
+                        <line x1="56" y1="14.5" y2="14.5" stroke="#0F304D" stroke-width="3" />
+                        <line x1="56" y1="27.5" y2="27.5" stroke="#0F304D" stroke-width="3" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-lg-none d-flex flex-column">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+                                fill="none">
+                                <path
+                                    d="M16.5881 18.6577L10.0375 12.107L3.14745 18.9971L0.941276 16.7909L7.83132 9.90087L1.31463 3.38417L3.5208 1.178L10.0375 7.69469L16.9275 0.804646L19.1337 3.01082L12.2437 9.90087L18.7943 16.4515L16.5881 18.6577Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="images/logo-mobile.svg" alt="PetroFunders"></a>
 
-                <div class="links-wrapper">
-                    <ul class="section-links w-100">
-                        <li>
-                            <a href="#overview" class="active">Overview</a>
+                    </div>
+                    <ul class="navbar-nav mt-2">
+                        <li class="nav-item"><a class="nav-link p-3" href="#">My Dashboard</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-3 dropdown-toggle" href="#" id="navbardrop"
+                                data-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu border-0 rounded-0 py-2 px-4">
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Profiles</a>
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Open Investments</a>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#strategy">Strategy</a>
-                        </li>
-                        <li>
-                            <a href="#targetedAssets">Targeted Assets</a>
-                        </li>
-                        <li>
-                            <a href="#topQuestions">Top Questions</a>
+                        <li class="nav-item"><a class="nav-link p-3 active" href="#">Why Invest</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-3" href="#" id="navbardrop"
+                                data-toggle="dropdown">Resources</a>
+                            <div class="dropdown-menu border-0 rounded-0 py-2 px-4">
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Why Invest</a>
+                                <a class="dropdown-item px-0 bg-transparent" href="#">FAQ Center</a>
+                                <a class="dropdown-item px-0 bg-transparent" href="#">ESG</a>
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Blog</a>
+                            </div>
                         </li>
                     </ul>
-                    <a href="#" class="invest-btn">
-                        <img src="images/arrow-right.svg" alt="arrow-right"> Invest Now
-                    </a>
+                    <ul class="navbar-nav mt-2 ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link p-3 dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"
+                                aria-expanded="false">Maurice D.</a>
+                            <div class="dropdown-menu border-0 rounded-0 py-2 px-4 dropdown-menu-right">
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Other Profile 1</a>
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Create New Profile</a>
+                                <a class="dropdown-item px-0 bg-transparent" href="#">Settings (account info)</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+        </header>
+        <!-- ======== /Header ======== -->
 
-                <div class="overview" id="overview">
-                    <div class="highlights text-white">
-                        <h3>Highlights</h3>
-                        <ul>
-                            <li>Aim to dispense allocable cash through quarterly distributions</li>
-                            <li>Targeting Royalty Investments currently generating income</li>
-                            <li>Acquisition strategy tailored to assets that generate consistent cash flow</li>
+        <!-- ======== Main container ======== -->
+        <main class="offering-page">
+            <!-- ****** Teal hero-section ****** -->
+            <section class="teal-heroSec">
+                <div class="container">
+                    <div class="col-lg-8 col-md-11 mx-auto text-center">
+                        <h1 class="font-DM">Passive Income RIF</h1>
+                        <h3 class="sub-heading">Competitive returns, steady income stream</h3>
+                        <p>Each investment option is professionally managed by the ultra experienced PetroFunders
+                            management team, ensuring
+                            that
+                            each pFund vehicle is crafted to deliver returns</p>
+                    </div>
+
+                    <div class="features mx-auto">
+                        <div class="d-flex">
+                            <div class="feature-label">Distributions</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width:94%" aria-valuenow="94"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="feature-label">Relative Risk</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width:12%" aria-valuenow="94"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="feature-label">Full Cycle Return</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width:38%" aria-valuenow="38"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="links-wrapper">
+                        <ul class="section-links w-100">
+                            <li>
+                                <a href="#overview" class="active">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#strategy">Strategy</a>
+                            </li>
+                            <li>
+                                <a href="#targetedAssets">Targeted Assets</a>
+                            </li>
+                            <li>
+                                <a href="#topQuestions">Top Questions</a>
+                            </li>
                         </ul>
+                        <a href="#" class="invest-btn">
+                            <img src="images/arrow-right.svg" alt="arrow-right"> Invest Now
+                        </a>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img src="images/highlights-chart.svg" alt="highlights-chart">
-                        <div class="stats-text">
-                            <div class="d-flex">
-                                <span class="color"></span> Cash Flowing-tailored assets <br>90 -100%
-                            </div>
-                            <div class="d-flex">
-                                <span class="color"></span> Growth-tailored assets <br>0 -100%
+
+                    <div class="overview" id="overview">
+                        <div class="highlights text-white">
+                            <h3 class="font-DM">Highlights</h3>
+                            <ul>
+                                <li>Aim to dispense allocable cash through quarterly distributions</li>
+                                <li>Targeting Royalty Investments currently generating income</li>
+                                <li>Acquisition strategy tailored to assets that generate consistent cash flow</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="images/op-highlights-chart.svg" alt="highlights-chart">
+                            <div class="stats-text">
+                                <div class="d-flex">
+                                    <span class="color"></span> Cash Flowing-tailored assets <br>90 -100%
+                                </div>
+                                <div class="d-flex">
+                                    <span class="color"></span> Growth-tailored assets <br>0 -100%
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           </div> 
-        </section>
-        <!-- ****** /Teal hero-section ****** -->
-        
-        <!-- Arch divider -->
-        <div class="arch-divider"></div>
-        <!-- /Arch divider -->
+            </section>
+            <!-- ****** /Teal hero-section ****** -->
 
-        <!-- ****** Strategy section ****** -->
-        <section class="strategy-sec" id="strategy">
-            <!-- strategy-sec background shape -->
-            <img class="bg-shape" src="images/strategy-bg-shapes.svg" alt="strategy-bg-shapes">
-            <!-- /strategy-sec background shape -->
+            <!-- Arch divider -->
+            <div class="arch-divider"></div>
+            <!-- /Arch divider -->
 
-            <div class="container">
-                <div class="text-center">
-                    <h2>Strategy</h2>
-                    <h3 class="sub-heading">Direct access to cash flow from an actively managed royalty portfolio</h3>
-                </div>
-                <div class="strategy-row-wrap">
-                    <div class="row">
-                        <div class="col-text">
-                            <div class="icon">
-                                <img src="images/cycle.svg" alt="cycle">
+            <!-- ****** Strategy section ****** -->
+            <section class="strategy-sec" id="strategy">
+                <!-- strategy-sec background shape -->
+                <img class="bg-shape" src="images/strategy-sec-bg-shape.svg" alt="strategy-bg-shape">
+                <!-- /strategy-sec background shape -->
+
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="font-DM">Strategy</h2>
+                        <h3 class="sub-heading">Direct access to cash flow from an actively managed royalty portfolio
+                        </h3>
+                    </div>
+                    <div class="strategy-row-wrap">
+                        <div class="row">
+                            <div class="col-text">
+                                <div class="icon">
+                                    <img src="images/op-strategy-approach.svg" alt="strategy-approach">
+                                </div>
+                                <div class="text">
+                                    <h4 class="font-DM">Unique and proprietary approach to originating investments</h4>
+                                    <p>Our acquisition strategy and approach will aim to take advantage of an
+                                        underserved population of royalty
+                                        interest owners
+                                        looking to divest their position.</p>
+                                </div>
                             </div>
-                            <div class="text">
-                                <h4>Unique and proprietary approach to originating investments</h4>
-                                <p>Our acquisition strategy and approach will aim to take advantage of an underserved population of royalty
-                                    interest owners
-                                    looking to divest their position.</p>
+                            <div class="col-image">
+                                <div class="image-cluster">
+                                    <img src="images/image-cluster.png" alt="image-cluster">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-image">
-                            <div class="image-cluster">
-                                <img src="images/image-cluster.png" alt="image-cluster">
+                        <div class="row">
+                            <div class="col-text order-lg-2">
+                                <div class="icon">
+                                    <img src="images/op-finance-calendar.svg" alt="finance-calendar">
+                                </div>
+                                <div class="text">
+                                    <h4 class="font-DM">Ownership of producing assets that delivers consistent income
+                                    </h4>
+                                    <p>Our approach to acquiring royalty interest strategically focuses on the highly
+                                        fragmented portion of our
+                                        market sector.
+                                        We target assets with a relatively predictable income stream with an emphasis on
+                                        immediate cash flow.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-image order-lg-1">
+                                <div class="image-with-caption">
+                                    <img src="images/yellow-fields.png" alt="yellow-fields">
+                                    <div class="caption">
+                                        <span class="font-DM">9-11%</span> Targeted IRR
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-text">
+                                <div class="icon">
+                                    <img src="images/op-money-exchange.svg" alt="money-exchange">
+                                </div>
+                                <div class="text">
+                                    <h4 class="font-DM">Realize full cycle returns over time from direct access to cash
+                                        flow</h4>
+                                    <p>Investors with an income strategy to wealth building benefit from a consistent
+                                        flow of cash distributions
+                                        over time.
+                                        With a world class management team, we look to opportunistically divest and
+                                        acquire royalty investments
+                                        that will
+                                        continue to produce income over an extended time frame.</p>
+                                </div>
+                            </div>
+                            <div class="col-image">
+                                <div class="cash-cycle-wrap">
+                                    <div class="ccw-col">
+                                        <img src="images/op-USA-map.svg" alt="USA-map">
+                                        <h5>Originate/Source Investments</h5>
+                                    </div>
+                                    <img src="images/op-connecting-line.svg" alt="connecting-line" class="connect-line">
+                                    <div class="ccw-col">
+                                        <img src="images/op-certification-icon.svg" alt="certification-icon">
+                                        <h5>Acquire assets that fit our criteria</h5>
+                                    </div>
+                                    <img src="images/op-connecting-line.svg" alt="connecting-line" class="connect-line">
+                                    <div class="ccw-col">
+                                        <img src="images/op-distribute-cash.svg" alt="distribute-cash">
+                                        <h5>Distribute cash to our investors</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-text order-lg-2">
-                            <div class="icon">
-                                <img src="images/finance-calendar.svg" alt="finance-calendar">
-                            </div>
-                            <div class="text">
-                                <h4>Ownership of producing assets that delivers consistent income</h4>
-                                <p>Our approach to acquiring royalty interest strategically focuses on the highly fragmented portion of our
-                                    market sector.
-                                    We target assets with a relatively predictable income stream with an emphasis on immediate cash flow.
+                </div>
+            </section>
+            <!-- ****** /Strategy section ****** -->
+
+            <!-- Wavy line divider -->
+            <div class="wave-line-divider">
+                <img src="images/op-single-wavy-line.svg" alt="single-wavy-line">
+            </div>
+            <!-- /Wavy line divider -->
+
+            <!-- ****** Targeted-assests section ****** -->
+            <section class="targeted-assets-sec" id="targetedAssets">
+                <!-- targeted-assests background image -->
+                <img class="bg-image" src="images/field-picture-with-wave-divider.png"
+                    alt="field-picture-with-wave-divider">
+                <!-- /targeted-assests background image -->
+
+                <!-- Teal wave divider -->
+                <div class="teal-wave-divider">
+                    <img src="images/op-teal-wave-divider.svg" alt="teal-wave-divider">
+                </div>
+                <!-- /Teal wave divider -->
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div>
+                                <h2 class="font-DM">Targeted Assets</h2>
+                                <p>We will seek to acquire a diversified portfolio of Royalty Interests. We will target
+                                    developed income producing
+                                    assets that provide current and predictable cash flow with limited to no operating
+                                    expenses or liabilities. Royalty
+                                    Interests will include, but not be limited to, the following:
                                 </p>
                             </div>
                         </div>
-                        <div class="col-image order-lg-1">
-                            <div class="image-with-caption">
-                                <img src="images/yellow-fields.png" alt="yellow-fields">
-                                <div class="caption">
-                                    <span>9-11%</span> Targeted IRR
+                        <div class="col-lg-6">
+                            <div class="icon-wrapper">
+                                <div class="icon-container">
+                                    <div class="icon-circle">
+                                        <img src="images/op-mineral-icon.svg" alt="mineral-icon">
+                                    </div>
+                                    <h5>Mineral rights <br>and royalties</h5>
+                                </div>
+                                <div class="icon-container">
+                                    <div class="icon-circle">
+                                        <img src="images/op-pie-chart.svg" alt="pie-chart">
+                                    </div>
+                                    <h5>Royalty<br> overrides</h5>
+                                </div>
+                                <div class="icon-container">
+                                    <div class="icon-circle">
+                                        <img src="images/op-capital-icon.svg" alt="capital-icon">
+                                    </div>
+                                    <h5>Volumetric production <br>payments</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </section>
+            <!-- ****** /Targeted-assests section ****** -->
+
+            <!-- ****** Top-questions section ***** -->
+            <section id="topQuestions" class="top-ques-sec">
+                <!-- top-question background shape -->
+                <img class="bg-shape" src="images/op-tq-bg-shapes.svg" alt="tq-bg-shapes">
+                <!-- /top-question background shape -->
+
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="font-DM text-white">Top Questions</h2>
+                        <h3 class="sub-heading">We will seek to acquire a diversified portfolio of Royalty Interests
+                        </h3>
+                    </div>
+
+                    <div class="accordion" id="faqs">
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq1"
+                                aria-expanded="false" aria-controls="faq1">
+                                What am I investing in?
+                            </button>
+                            <div id="faq1" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq2"
+                                aria-expanded="false" aria-controls="faq2">
+                                How will the Company identify investment opportunities or projects?
+                            </button>
+                            <div id="faq2" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq3"
+                                aria-expanded="false" aria-controls="faq3">
+                                Who is the Manager?
+                            </button>
+                            <div id="faq3" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq4"
+                                aria-expanded="false" aria-controls="faq4">
+                                What will be the source of your distributions?
+                            </button>
+                            <div id="faq4" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq5"
+                                aria-expanded="false" aria-controls="faq5">
+                                What are the differences between Class A Interests and Class B Interests?
+                            </button>
+                            <div id="faq5" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq6"
+                                aria-expanded="false" aria-controls="faq6">
+                                May I reinvest my cash distributions in additional Class A Interests?
+                            </button>
+                            <div id="faq6" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq7"
+                                aria-expanded="false" aria-controls="faq7">
+                                What expenses will you pay as an investor in PF Royalty I LLC?
+                            </button>
+                            <div id="faq7" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#faq8"
+                                aria-expanded="false" aria-controls="faq8">
+                                What tax documents can I expect to receive?
+                            </button>
+                            <div id="faq8" class="collapse" data-parent="#faqs">
+                                <div class="accordion-text-wrap">
+                                    <ul>
+                                        <li>PetroFunders is an online marketplace for oil and gas investing. We provide
+                                            access to accredited
+                                            investors who want to
+                                            invest in exclusive oil and gas deals. Investors can browse investments,
+                                            technical data, review due
+                                            diligence materials,
+                                            and sign legal documents securely online. Once invested, investors have
+                                            access to a personal
+                                            dashboard
+                                            24/7.</li>
+                                        <li>Oil and gas operators / originators seeking capital can do so by sending
+                                            materials to <a
+                                                href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
+                                        <li>We are here to simplify oil and gas investing through technology.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ****** /Top-questions section ****** -->
+
+            <!-- Arch divider -->
+            <div class="arch-divider"></div>
+            <!-- /Arch divider -->
+
+            <!-- ****** Investment incentives section ****** -->
+            <section class="investment-incentives-sec">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="font-DM">Investment Incentives Tiers</h2>
+                        <h3 class="sub-heading">We will seek to acquire a diversified portfolio of Royalty Interests.
+                        </h3>
+                    </div>
+
                     <div class="row">
-                        <div class="col-text">
-                            <div class="icon">
-                                <img src="images/money-exchange.svg" alt="money-exchange">
-                            </div>
-                            <div class="text">
-                                <h4>Realize full cycle returns over time from direct access to cash flow</h4>
-                                <p>Investors with an income strategy to wealth building benefit from a consistent flow of cash distributions
-                                    over time.
-                                    With a world class management team, we look to opportunistically divest and acquire royalty investments
-                                    that will
-                                    continue to produce income over an extended time frame.</p>
+                        <div class="col-lg-4">
+                            <div class="tier-wrap">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex name">
+                                        <img src="images/op-early-bird-icon.svg" alt="early-bird-icon">
+                                        <h4 class="font-DM">Early Bird |</h4>
+                                    </div>
+                                    <div class="amount">$10,000</div>
+                                </div>
+                                <p>Early investors are rewarded with Early Bird incentives.</p>
+                                <p>Available up to $5 Million</p>
+                                <ul>
+                                    <li>Incentive 1</li>
+                                    <li>Incentive 2</li>
+                                    <li>Incentive 3</li>
+                                </ul>
+                                <a href="#" class="get-started-btn">
+                                    <img src="images/arrow-right.svg" alt="arrow-right"> Get started
+                                </a>
                             </div>
                         </div>
-                        <div class="col-image">
-                            <div class="cash-cycle-wrap">
-                                <div class="ccw-col">
-                                    <img src="images/US-map.svg" alt="US-map">
-                                    <h5>Originate/Source Investments</h5>
+                        <div class="col-lg-4">
+                            <div class="tier-wrap">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex name">
+                                        <img src="images/op-on-time-icon.svg" alt="on-time-icon">
+                                        <h4 class="font-DM">On Time |</h4>
+                                    </div>
+                                    <div class="amount">$25,000</div>
                                 </div>
-                                <img src="images/connecting-line.svg" alt="connecting-line" class="connect-line">
-                                <div class="ccw-col">
-                                    <img src="images/Assets-icon.svg" alt="Assets-icon">
-                                    <h5>Acquire assets that fit our criteria</h5>
+                                <p>Early investors are rewarded with On-Time incentives.</p>
+                                <p>Available up from $5-7 Million</p>
+                                <ul>
+                                    <li>Incentive 1</li>
+                                    <li>Incentive 2</li>
+                                    <li>Incentive 3</li>
+                                </ul>
+                                <a href="#" class="get-started-btn">
+                                    <img src="images/arrow-right.svg" alt="arrow-right"> Get started
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="tier-wrap">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex name">
+                                        <img src="images/op-late-arrival-icon.svg" alt="late-arrival-icon">
+                                        <h4 class="font-DM">Late-Arrival |</h4>
+                                    </div>
+                                    <div class="amount">$50,000</div>
                                 </div>
-                                <img src="images/connecting-line.svg" alt="connecting-line" class="connect-line">
-                                <div class="ccw-col">
-                                    <img src="images/Distribute-cash.svg" alt="distribute-cash">
-                                    <h5>Distribute cash to our investors</h5>
-                                </div>
+                                <p>Early investors are rewarded with the last of the available incentives</p>
+                                <p>Available up to $7-10 Million</p>
+                                <ul>
+                                    <li>Incentive 1</li>
+                                    <li>Incentive 2</li>
+                                    <li>Incentive 3</li>
+                                </ul>
+                                <a href="#" class="get-started-btn">
+                                    <img src="images/arrow-right.svg" alt="arrow-right"> Get started
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- ****** /Strategy section ****** -->
+            </section>
+            <!-- ****** /Investment incentives section ****** -->
+        </main>
+        <!-- ======== /Main container ======== -->
 
-        <!-- Wavy line divider -->
-        <div class="wave-line-divider">
-            <img src="images/single-wavy-line.svg" alt="single-wavy-line">
-        </div>
-        <!-- /Wavy line divider -->
+        <!-- javascript files -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                    ) {
 
-        <!-- ****** Targeted-assests section ****** -->
-        <section class="targeted-assets-sec" id="targetedAssets">
-            <!-- targeted-assests background image -->
-            <img class="bg-image" src="images/field-picture-with-wave-divider.png" alt="field-picture-with-wave-divider">
-            <!-- /targeted-assests background image -->
-            
-            <!-- Teal wave divider -->
-            <div class="teal-wave-divider">
-                <img src="images/teal-wave-divider.svg" alt="teal-wave-divider">
-            </div>
-            <!-- /Teal wave divider -->
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h2>Targeted Assets</h2>
-                        <p>We will seek to acquire a diversified portfolio of Royalty Interests. We will target developed income producing assets
-                        that provide current and predictable cash flow with limited to no operating expenses or liabilities. Royalty Interests
-                        will include, but not be limited to, the following:
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="icon-wrapper">
-                            <div class="icon-container">
-                                <div class="icon-circle">
-                                    <img src="images/noun_Mineral.svg" alt="noun_Mineral">
-                                </div>
-                                <h5>Mineral rights <br>and royalties</h5>
-                            </div>
-                            <div class="icon-container">
-                                <div class="icon-circle">
-                                    <img src="images/Pie_Chart.svg" alt="Pie_Chart">
-                                </div>
-                                <h5>Royalty<br> overrides</h5>
-                            </div>
-                            <div class="icon-container">
-                                <div class="icon-circle">
-                                    <img src="images/noun_Capital.svg" alt="noun_Capital">
-                                </div>
-                                <h5>Volumetric production <br>payments</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
-        </section>
-        <!-- ****** /Targeted-assests section ****** -->
-        
-        <!-- ****** Top-questions section ***** -->
-        <section id="topQuestions" class="top-ques-sec">
-            <!-- top-question background shape -->
-            <img class="bg-shape" src="images/tq-bg-shapes.svg" alt="tq-bg-shapes">
-            <!-- /top-question background shape -->
+                        if (target.length) {
 
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="text-white">Top Questions</h2>
-                    <h3 class="sub-heading">We will seek to acquire a diversified portfolio of Royalty Interests</h3>
-                </div>
-
-                <div class="accordion" id="faqs">
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq1" aria-expanded="false" aria-controls="faq1">
-                            What am I investing in?
-                        </button>
-                        <div id="faq1" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                            How will the Company identify investment opportunities or projects?
-                        </button>
-                        <div id="faq2" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                            Who is the  Manager?
-                        </button>
-                        <div id="faq3" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                            What will be the source of your distributions?
-                        </button>
-                        <div id="faq4" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                            What are the differences between Class A Interests and Class B Interests?
-                        </button>
-                        <div id="faq5" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6">
-                            May I reinvest my cash distributions in additional Class A Interests?
-                        </button>
-                        <div id="faq6" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq7" aria-expanded="false"
-                            aria-controls="faq7">
-                            What expenses will you pay as an investor in PF Royalty I LLC?
-                        </button>
-                        <div id="faq7" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-wrap">
-                        <button class="btn btn-block" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8">
-                            What tax documents can I expect to receive?
-                        </button>
-                        <div id="faq8" class="collapse" data-parent="#faqs">
-                            <div class="accordion-text-wrap">
-                                <ul>
-                                    <li>PetroFunders is an online marketplace for oil and gas investing. We provide access to accredited
-                                        investors who want to
-                                        invest in exclusive oil and gas deals. Investors can browse investments, technical data, review due
-                                        diligence materials,
-                                        and sign legal documents securely online. Once invested, investors have access to a personal
-                                        dashboard
-                                        24/7.</li>
-                                    <li>Oil and gas operators / originators seeking capital can do so by sending materials to <a
-                                            href="mailto:info@petrofundersusa.com">info@petrofundersusa.com</a></li>
-                                    <li>We are here to simplify oil and gas investing through technology.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ****** /Top-questions section ****** -->
-
-        <!-- Arch divider -->
-        <div class="arch-divider"></div>
-        <!-- /Arch divider -->
-
-        <!-- ****** Investment incentives section ****** -->
-        <section class="investment-incentives-sec">
-            <div class="container">
-                <div class="text-center">
-                    <h2>Investment Incentives Tiers</h2>
-                    <h3 class="sub-heading">We will seek to acquire a diversified portfolio of Royalty Interests.</h3>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="tier-wrap">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex name">
-                                    <img src="images/early-bird.svg" alt="early-bird">
-                                    <h4>Early Bird |</h4>
-                                </div>
-                                <div class="amount">$10,000</div>
-                            </div>
-                            <p>Early investors are rewarded with Early Bird incentives.</p>
-                            <p>Available up to $5 Million</p>
-                            <ul>
-                                <li>Incentive 1</li>
-                                <li>Incentive 2</li>
-                                <li>Incentive 3</li>
-                            </ul>
-                            <a href="#" class="get-started-btn">
-                                <img src="images/arrow-right.svg" alt="arrow-right"> Get started
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tier-wrap">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex name">
-                                    <img src="images/on-time.svg" alt="on-time">
-                                    <h4>On Time |</h4>
-                                </div>
-                                <div class="amount">$25,000</div>
-                            </div>
-                            <p>Early investors are rewarded with On-Time incentives.</p>
-                            <p>Available up from $5-7 Million</p>
-                            <ul>
-                                <li>Incentive 1</li>
-                                <li>Incentive 2</li>
-                                <li>Incentive 3</li>
-                            </ul>
-                            <a href="#" class="get-started-btn">
-                                <img src="images/arrow-right.svg" alt="arrow-right"> Get started
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="tier-wrap">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex name">
-                                    <img src="images/late-arrival.svg" alt="late-arrival">
-                                    <h4>Late-Arrival |</h4>
-                                </div>
-                                <div class="amount">$50,000</div>
-                            </div>
-                            <p>Early investors are rewarded with the last of the available incentives</p>
-                            <p>Available up to $7-10 Million</p>
-                            <ul>
-                                <li>Incentive 1</li>
-                                <li>Incentive 2</li>
-                                <li>Incentive 3</li>
-                            </ul>
-                            <a href="#" class="get-started-btn">
-                                <img src="images/arrow-right.svg" alt="arrow-right"> Get started
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ****** /Investment incentives section ****** -->
-    </main>
-    <!-- ======== /Main container ======== -->
-
-    <!-- javascript files -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-       // Select all links with hashes
-        $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function (event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                    &&
-                    location.hostname == this.hostname
-                ) {
-     
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                  
-                    if (target.length) {
-                      
-                        event.preventDefault();
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 800, function () {
-                            // Callback after animation
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) { 
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1');
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 800, function () {
+                                // Callback after animation
+                                var $target = $(target);
                                 $target.focus();
-                            };
-                        });
+                                if ($target.is(":focus")) {
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1');
+                                    $target.focus();
+                                };
+                            });
+                        }
                     }
-                }
-            }); 
-    </script>
-</body>
+                });
+        </script>
+    </body>
+
 </html>
